@@ -12,24 +12,13 @@ title('Dvi funkcijos')
 xlabel('X-ai')
 ylabel('F_1 [-o-]   |   F_2 [-x-]')
 
-% --- 9 UŽDUOTIS: Funkcijų analizė ---
+N = 8;
+v = (N + 1):0.5:(N + 4)
+A = reshape(N:(N + 8), 3, 3)';
 
-% 1. LINSPACE:
-% Sintaksė:
-% y = linspace(x1, x2) - sugeneruoja 100 tolygiai pasiskirsčiusių taškų intervale [x1, x2].
-% y = linspace(x1, x2, n) - sugeneruoja n taškų intervale [x1, x2].
-% Ryšys su kitomis funkcijomis (See Also): colon (:), logspace.
+A_a = A(3, 2)
+A_b = A(2:3, 1:2)
+A_c = A([1, 3], [1, 3])
 
-% 2. SIZE:
-% Sintaksė:
-% d = size(A)- grąžina vektorių su matricos matmenimis [eilutės, stulpeliai].
-% [m, n] = size(A)- atskirai išsaugo eilučių skaičių į m, o stulpelių į n.
-% sz = size(A, dim)- grąžina matmens dim dydį (1 - eilutės, 2 - stulpeliai).
-% Ryšys su kitomis funkcijomis (See Also): length, numel, ndims.
-
-% 3. MAX:
-% Sintaksė:
-%   M = max(A)- randa didžiausią vektoriaus elementą arba matricos stulpelių maksimumus.
-%   [M, I] = max(A)- randa didžiausią reikšmę M ir jos indeksą (poziciją) I.
-%   C = max(A, B) - grąžina didžiausius elementus, lyginant masyvus A ir B poelementiui.
-%   M = max(A, [], dim) - ieško didžiausios reikšmės pagal nurodytą dimensiją dim.
+v_mod = v(1:3);
+A_prijungta = [A; v_mod]
