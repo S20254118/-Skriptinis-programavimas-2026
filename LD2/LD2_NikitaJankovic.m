@@ -34,4 +34,4 @@ max_filtruoto = max(filtruotas)
 min_filtruoto = min(filtruotas)
 
 A = input('Iveskite vektoriu A:[n1, n2, n3 ... n4] ');
-B = [A, A(end:-1:1)]
+B = [A, A(end:-1:1)] 
