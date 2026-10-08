@@ -4,11 +4,11 @@
 % Data: 2026-10-01
 % Variantas: 5 (Privaloma) ir 24 (Papildoma)
 
-x_rand = (2*rand(1, 200)-1).*sqrt(pi/2);
-y_rand = (2*rand(1, 200)-1).*sqrt(pi/2);
+x_rand=(2*rand(1,200)-1).*sqrt(pi/2);
+y_rand=(2*rand(1,200)-1).*sqrt(pi/2);
 
-x_vec = linspace(min(x_rand),max(x_rand));
-y_vec = linspace(min(y_rand),max(y_rand));
+x_vec=linspace(min(x_rand),max(x_rand));
+y_vec=linspace(min(y_rand),max(y_rand));
 [X1,Y1]=meshgrid(x_vec,y_vec);
 Z1=sin(X1.^2 + Y1.^2);
 figure(1)
@@ -47,7 +47,7 @@ figure(3)
 
 subplot(1, 3, 1)
 surf(X, Y, Z)
-colormap(gca, hot)
+colormap(gca,hot)
 shading interp
 title('hot')
 xlabel('x')
@@ -57,7 +57,7 @@ grid on
 
 subplot(1, 3, 2)
 surf(X, Y, Z)
-colormap(gca, cool)
+colormap (gca, cool)
 shading interp
 title('cool')
 xlabel('x')
@@ -67,7 +67,7 @@ grid on
 
 subplot(1, 3, 3)
 surf(X, Y, Z)
-colormap(gca, summer)
+colormap (gca,summer)
 shading interp
 title('summer')
 xlabel('x')
